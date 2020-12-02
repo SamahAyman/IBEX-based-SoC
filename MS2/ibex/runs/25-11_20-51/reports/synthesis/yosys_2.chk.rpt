@@ -1,0 +1,111 @@
+
+40. Executing CHECK pass (checking for obvious problems).
+checking module ibex_core..
+Warning: Wire ibex_core.\instr_req_o is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [31] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [30] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [29] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [28] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [27] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [26] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [25] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [24] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [23] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [22] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [21] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [20] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [19] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [18] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [17] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [16] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [15] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [14] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [13] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [12] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [11] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [10] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [9] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [8] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [7] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [6] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [5] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [4] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [3] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [2] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [1] is used but has no driver.
+Warning: Wire ibex_core.\instr_addr_o [0] is used but has no driver.
+Warning: Wire ibex_core.\data_we_o is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [31] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [30] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [29] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [28] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [27] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [26] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [25] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [24] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [23] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [22] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [21] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [20] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [19] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [18] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [17] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [16] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [15] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [14] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [13] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [12] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [11] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [10] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [9] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [8] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [7] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [6] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [5] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [4] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [3] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [2] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [1] is used but has no driver.
+Warning: Wire ibex_core.\data_wdata_o [0] is used but has no driver.
+Warning: Wire ibex_core.\data_req_o is used but has no driver.
+Warning: Wire ibex_core.\data_be_o [3] is used but has no driver.
+Warning: Wire ibex_core.\data_be_o [2] is used but has no driver.
+Warning: Wire ibex_core.\data_be_o [1] is used but has no driver.
+Warning: Wire ibex_core.\data_be_o [0] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [31] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [30] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [29] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [28] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [27] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [26] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [25] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [24] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [23] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [22] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [21] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [20] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [19] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [18] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [17] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [16] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [15] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [14] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [13] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [12] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [11] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [10] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [9] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [8] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [7] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [6] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [5] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [4] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [3] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [2] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [1] is used but has no driver.
+Warning: Wire ibex_core.\data_addr_o [0] is used but has no driver.
+Warning: Wire ibex_core.\core_sleep_o is used but has no driver.
+Warning: Wire ibex_core.\alert_minor_o is used but has no driver.
+Warning: Wire ibex_core.\alert_major_o is used but has no driver.
+Warning: Wire ibex_core.$abc$68755$flatten\core_clock_gate_i.$0\en_latch[0:0] is used but has no driver.
+found and reported 107 problems.

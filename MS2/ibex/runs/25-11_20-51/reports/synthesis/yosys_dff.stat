@@ -1,0 +1,28 @@
+
+33. Printing statistics.
+
+=== ibex_core ===
+
+   Number of wires:              16570
+   Number of wire bits:          19606
+   Number of public wires:         180
+   Number of public wire bits:    3216
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              19117
+     $_ANDNOT_                    3529
+     $_AND_                        676
+     $_DLATCH_N_                     1
+     $_MUX_                       6188
+     $_NAND_                       388
+     $_NOR_                        751
+     $_NOT_                       1453
+     $_ORNOT_                      533
+     $_OR_                        2521
+     $_XNOR_                       377
+     $_XOR_                        769
+     sky130_fd_sc_hd__dfrtp_4     1650
+     sky130_fd_sc_hd__dfstp_4        8
+     sky130_fd_sc_hd__dfxtp_4      273
+

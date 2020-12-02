@@ -1,0 +1,27 @@
+
+35. Printing statistics.
+
+=== soc_m1_b1 ===
+
+   Number of wires:              22286
+   Number of wire bits:          27877
+   Number of public wires:         357
+   Number of public wire bits:    5824
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              27703
+     $_ANDNOT_                    5456
+     $_AND_                        285
+     $_MUX_                       9794
+     $_NAND_                       332
+     $_NOR_                        525
+     $_NOT_                        737
+     $_ORNOT_                      341
+     $_OR_                        4104
+     $_XNOR_                       126
+     $_XOR_                        602
+     sky130_fd_sc_hd__dfrtp_4     1040
+     sky130_fd_sc_hd__dfstp_4       70
+     sky130_fd_sc_hd__dfxtp_4     4291
+

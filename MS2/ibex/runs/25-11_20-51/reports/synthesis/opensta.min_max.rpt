@@ -1,0 +1,95 @@
+Startpoint: _38664_ (rising edge-triggered flip-flop)
+Endpoint: instr_addr_o[10] (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00 ^ _38664_/CLK (sky130_fd_sc_hd__dfxtp_4)
+   0.27    0.27 ^ _38664_/Q (sky130_fd_sc_hd__dfxtp_4)
+   0.11    0.37 ^ _24709_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00    0.37 ^ instr_addr_o[10] (out)
+           0.37   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+  -2.00   -2.00   output external delay
+          -2.00   data required time
+---------------------------------------------------------
+          -2.00   data required time
+          -0.37   data arrival time
+---------------------------------------------------------
+           2.37   slack (MET)
+
+
+Startpoint: _38566_ (rising edge-triggered flip-flop)
+Endpoint: instr_addr_o[31] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00 ^ _38566_/CLK (sky130_fd_sc_hd__dfxtp_4)
+   2.32    2.32 ^ _38566_/Q (sky130_fd_sc_hd__dfxtp_4)
+   0.08    2.41 v _26318_/Y (sky130_fd_sc_hd__inv_8)
+   0.12    2.53 ^ _26319_/Y (sky130_fd_sc_hd__nand3_4)
+   0.21    2.74 ^ _26320_/X (sky130_fd_sc_hd__or2_4)
+   0.44    3.18 ^ _26321_/X (sky130_fd_sc_hd__buf_1)
+   0.37    3.55 ^ _26346_/X (sky130_fd_sc_hd__or4_4)
+   0.44    3.99 ^ _26347_/X (sky130_fd_sc_hd__buf_1)
+   0.17    4.15 v _26348_/Y (sky130_fd_sc_hd__inv_8)
+   1.05    5.20 v _26353_/X (sky130_fd_sc_hd__or4_4)
+   0.58    5.78 ^ _26354_/Y (sky130_fd_sc_hd__nor4_4)
+   0.20    5.98 v _28219_/Y (sky130_fd_sc_hd__nor4_4)
+   0.28    6.26 v _28220_/X (sky130_fd_sc_hd__o21a_4)
+   0.09    6.35 ^ _28221_/Y (sky130_fd_sc_hd__inv_8)
+   0.19    6.54 ^ _28550_/X (sky130_fd_sc_hd__or2_4)
+   0.31    6.84 ^ _28552_/X (sky130_fd_sc_hd__and2_4)
+   0.20    7.04 ^ _28555_/X (sky130_fd_sc_hd__or2_4)
+   0.49    7.53 ^ _28556_/X (sky130_fd_sc_hd__buf_1)
+   0.12    7.66 v _28560_/Y (sky130_fd_sc_hd__inv_8)
+   0.58    8.24 v _28568_/X (sky130_fd_sc_hd__a211o_4)
+   0.81    9.05 v _28569_/X (sky130_fd_sc_hd__or4_4)
+   0.36    9.41 v _28570_/X (sky130_fd_sc_hd__buf_1)
+   0.55    9.96 v _33062_/X (sky130_fd_sc_hd__or2_4)
+   0.55   10.51 v _33068_/X (sky130_fd_sc_hd__a32o_4)
+   0.42   10.93 v _33069_/X (sky130_fd_sc_hd__or2_4)
+   0.35   11.27 v _33070_/X (sky130_fd_sc_hd__buf_1)
+   0.15   11.42 ^ _33071_/Y (sky130_fd_sc_hd__inv_8)
+   0.22   11.64 ^ _33074_/X (sky130_fd_sc_hd__a21o_4)
+   0.10   11.74 v _33150_/Y (sky130_fd_sc_hd__nor3_4)
+   0.55   12.29 v _33151_/X (sky130_fd_sc_hd__a211o_4)
+   0.12   12.41 ^ _33152_/Y (sky130_fd_sc_hd__inv_8)
+   0.07   12.48 v _33153_/Y (sky130_fd_sc_hd__nor3_4)
+   0.33   12.80 ^ _33154_/Y (sky130_fd_sc_hd__nor4_4)
+   0.16   12.97 v _33155_/Y (sky130_fd_sc_hd__nor3_4)
+   0.34   13.30 ^ _33156_/Y (sky130_fd_sc_hd__nor4_4)
+   0.16   13.47 v _33157_/Y (sky130_fd_sc_hd__nor3_4)
+   0.28   13.74 ^ _33158_/Y (sky130_fd_sc_hd__nor4_4)
+   0.66   14.40 ^ _33159_/X (sky130_fd_sc_hd__buf_1)
+   0.16   14.56 v _33160_/Y (sky130_fd_sc_hd__nor3_4)
+   0.88   15.44 v _33161_/X (sky130_fd_sc_hd__or4_4)
+   0.54   15.98 ^ _33346_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.08   16.06 v _33347_/Y (sky130_fd_sc_hd__inv_8)
+   0.25   16.30 v _37789_/X (sky130_fd_sc_hd__buf_1)
+   0.29   16.59 v _24445_/X (sky130_fd_sc_hd__and2_4)
+   0.86   17.45 v _24446_/X (sky130_fd_sc_hd__or4_4)
+   0.15   17.60 ^ _24455_/Y (sky130_fd_sc_hd__nand2_4)
+   0.38   17.97 ^ _24456_/Y (sky130_fd_sc_hd__a21boi_4)
+   0.51   18.49 v _24457_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00   18.49 v instr_addr_o[31] (out)
+          18.49   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -18.49   data arrival time
+---------------------------------------------------------
+         -10.49   slack (VIOLATED)
+
+
