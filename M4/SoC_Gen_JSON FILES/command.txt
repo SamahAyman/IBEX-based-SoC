@@ -1,0 +1,2 @@
+node ./src/sys_gen.js -soc ./systems/IBEX/Demo/demo.json -subsystem ./systems/IBEX/Demo/apb.json -IPlib ./IPs/IPs.json -mastersLib ./masters/masters.json -outDir ./IBEX/
+
