@@ -7,8 +7,6 @@
 ./AHB_sys_0/APB_sys_0/APB_PWM32.v
 ./AHB_sys_0/AHBlite_GPIO.v
 ./AHB_sys_0/AHBlite_sys_0.v
-./ibex_system.v
-./ibex_ahb_bridge_final.v
 ./soc_m1_b1_tb.v
 ./PWM.v
 ./ibex_wb_stage.v
@@ -44,6 +42,7 @@
 ./do.v
 ./qspi_xip_cache_ahb.v
 ./ibex_compressed_decoder.v
+./new_wrapper.v
 ./ibex_fetch_fifo.v
 ./ibex_core.v
 ./di.v

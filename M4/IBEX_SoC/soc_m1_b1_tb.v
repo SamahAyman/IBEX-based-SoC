@@ -41,6 +41,7 @@ module tb;
 	initial begin
 		HCLK = 0;
 		HRESETn = 1'bx;
+
 		#50;
 		HRESETn = 0;
 		#100;

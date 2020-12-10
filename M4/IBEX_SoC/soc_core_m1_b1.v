@@ -145,8 +145,8 @@ wire [0: 0] M3_IRQ;
 	.ena(SRAMCS0_Sys0_S1),
 	.wen(SRAMWEN_Sys0_S1)
 	);
-	// Instantiation of ibex_system
-	ibex_system IBEX(
+	// Instantiation of IBEX_wrapper
+	IBEX_wrapper IBEX(
 		.HCLK(HCLK),
 		.HRESETn(HRESETn),
 		.HADDR(M3_HADDR),
