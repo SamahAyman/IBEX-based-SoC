@@ -10,14 +10,17 @@ module prim_clock_gating (
   input  test_en_i,
   output clk_o
 );
-
-  reg en_latch;
-
-  always @* begin
-    if (!clk_i) begin
-      en_latch = en_i | test_en_i;
-    end
-  end
-  assign clk_o = en_latch & clk_i;
-
+ assign en_latch = en_i | test_en_i;
+ sky130_fd_sc_hd__dlclkp_1 clk_gate (
+    .GCLK(clk_o),
+    .GATE(en_latch),
+    .CLK(clk_i)
+ );
+ // always @* begin
+ //   if (!clk_i) begin
+//     en_latch = en_i | test_en_i;
+//   end
+// end
+// assign clk_o = en_latch & clk_i;
 endmodule
+

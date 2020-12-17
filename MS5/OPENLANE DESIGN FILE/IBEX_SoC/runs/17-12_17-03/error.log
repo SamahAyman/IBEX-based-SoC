@@ -1,4 +1,0 @@
-during executing: "/openLANE_flow/scripts/mergeLef.py -i /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-03/tmp/merged_unpadded.lef /openLANE_flow/designs/IBEX_SoC/../../lef/user_proj_example.lef -o /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-03/tmp/merged_unpadded.lef |& tee >&@stdout"
-Last 10 lines:
-child process exited abnormally
-

@@ -9,7 +9,6 @@ set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 2920 3520"
 set ::env(FP_CORE_UTIL) 25
 
-set ::env(CLOCK_PERIOD) "10.000"
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 
@@ -27,11 +26,10 @@ set ::env(FP_IO_VLENGTH) $::unit
 set ::env(FP_IO_HLENGTH) $::unit
 
 set ::env(FP_IO_VTHICKNESS_MULT) 4
-#set ::env(FP_IO_HTHICKNESS_MULT) 4
+set ::env(FP_IO_HTHICKNESS_MULT) 4
 
 
 set ::env(CLOCK_PORT) "HCLK"
-set ::env(CLOCK_NET) "mprj.clk"
 
 set ::env(CLOCK_PERIOD) "10"
 
@@ -42,6 +40,7 @@ set ::env(DIODE_INSERTION_STRATEGY) 0
 # for a sense of "isolation"
 set ::env(MAGIC_ZEROIZE_ORIGIN) 0
 set ::env(MAGIC_WRITE_FULL_LEF) 1
+
 
 set ::env(VERILOG_FILES) "[glob $::env(DESIGN_DIR)/src/*.v]"
 

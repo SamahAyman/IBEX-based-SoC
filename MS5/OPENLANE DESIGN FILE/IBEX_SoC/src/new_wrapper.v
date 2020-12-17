@@ -1,4 +1,4 @@
-module IBEX_wrapper
+module ibex_wrapper
   (
     input  wire         HCLK,							// System clock
     input  wire         HRESETn,						// System Reset, active low
@@ -12,14 +12,10 @@ module IBEX_wrapper
     input  wire         HREADY,				// AHB stall signal
     // MISCELLANEOUS 
     input  wire         NMI,				// Non-maskable interrupt input
-    input  wire         IRQ,				// Interrupt request line
-    input  wire [4:0]   IRQ_NUM,			// Interrupt number from the PIC			
-    input  wire 	      SYSTICKCLK,			// SYSTICK clock; ON pulse width is HCLK half period
-    output wire [31:0]	IRQ_MASK
-); 
-
-
-
+    input  wire         EXT_IRQ,				// Interrupt request line
+    input wire [14:0]   IRQ, 
+    input  wire [7:0]	SYSTICKCLKDIV
+);
   wire dpower = 1'b1;
   wire dground = 1'b0;
   reg [1:0] addr_offset;
@@ -42,6 +38,23 @@ module IBEX_wrapper
   wire data_req_o;
   wire data_gnt_i;
   wire data_we_o;
+  /* SYSTICK */
+  wire div;
+	reg  [7:0]  clkdiv;
+	reg 		systickclk;
+  assign div = (clkdiv == SYSTICKCLKDIV);
+  always @(posedge HCLK or negedge HRESETn)
+    if(!HRESETn) clkdiv <= 8'd0;
+		else if(div) 
+				clkdiv <= 8'h0;
+			else
+				clkdiv <= clkdiv + 8'h1; 
+  always @(posedge HCLK or negedge HRESETn)
+    if(!HRESETn) systickclk <= 1'b1;
+		else if(div) 
+				systickclk <= 1'b1;
+			else
+				systickclk <= 1'b0;	 
   ibex_core core (
     // Clock and Reset
     .clk_i(HCLK),
@@ -68,10 +81,10 @@ module IBEX_wrapper
     .data_err_i(dground),
     // Interrupt inputs
      .irq_software_i(dground),
-     .irq_timer_i(dground),
-     .irq_external_i(dground),
-     .irq_fast_i(dground),
-     .irq_nm_i(dground),       // non-maskeable interrupt
+     .irq_timer_i(systickclk),
+     .irq_external_i(EXT_IRQ),
+     .irq_fast_i(IRQ),
+     .irq_nm_i(NMI),       // non-maskeable interrupt
     // Debug Interface
      .debug_req_i(dground),
     // CPU Control Signals
@@ -89,14 +102,22 @@ module IBEX_wrapper
   always @(posedge HCLK or negedge HRESETn)
     if(!HRESETn) state <= S0;
     else state <= nstate;
-  always @*
+  always @* begin
+   nstate = S0;
     case (state)
-      S0  : if(data_req_o) nstate = S3; else if(instr_req_o) nstate = S1; else nstate = S0;
+      S0  : //if(data_req_o) nstate = S3; else if(instr_req_o) nstate = S1; else nstate = S0; else nstate = S0;
+      		case ({data_req_o, instr_req_o})
+		2'b00: nstate = S0;
+		2'b01: nstate = S1;
+		2'b10: nstate = S3;
+		2'b11: nstate = S3;
+		endcase
       S1  : nstate = S2;
       S2  : if(instr_rvalid_i) nstate = S0; else nstate = S2;
       S3  : nstate = S4;
       S4  : if(data_rvalid_i) nstate = S0; else nstate = S4;
     endcase
+    end
     assign instr_gnt_i = (state == S1);
     assign instr_rvalid_i = (state == S2) ? HREADY : 0;
     assign data_gnt_i = (state == S3);

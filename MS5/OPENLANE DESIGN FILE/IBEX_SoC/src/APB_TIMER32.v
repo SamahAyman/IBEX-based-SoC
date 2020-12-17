@@ -1,7 +1,7 @@
 /*
         APB Wrapper for TIMER32 macro 
         Automatically generated from a JSON description by Mohamed Shalan
-        Generated at 2020-12-10 11:25:38 
+        Generated at 2020-12-17 21:1:42 
 */
 
 `timescale 1ns/1ns

@@ -1,5 +1,5 @@
 module openstriVe_soc_mem #(
-	parameter integer WORDS = 64*2
+	parameter integer WORDS = 128*2
 ) (
 	input clk,
 	input ena,

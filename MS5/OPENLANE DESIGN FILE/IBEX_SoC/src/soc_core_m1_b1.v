@@ -146,7 +146,7 @@ wire [0: 0] M3_IRQ;
 	.wen(SRAMWEN_Sys0_S1)
 	);
 	// Instantiation of IBEX_wrapper
-	IBEX_wrapper IBEX(
+	ibex_wrapper IBEX(
 		.HCLK(HCLK),
 		.HRESETn(HRESETn),
 		.HADDR(M3_HADDR),
@@ -161,7 +161,7 @@ wire [0: 0] M3_IRQ;
 
 		//Interrupts
 
-		//.IRQ(M3_IRQ),
+		//.IRQ(M3_IRQ)
 
 		//Ports
 		);
