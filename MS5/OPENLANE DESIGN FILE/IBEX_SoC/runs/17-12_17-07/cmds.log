@@ -1,0 +1,8 @@
+Thu Dec 17 17:07:17 UTC 2020 - Executing "/openLANE_flow/scripts/mergeLef.py -i /pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-07/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Thu Dec 17 17:07:18 UTC 2020 - Executing "/openLANE_flow/scripts/padLefMacro.py -s unithd -r 8 -i /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-07/tmp/merged_unpadded.lef -o /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-07/tmp/merged.lef -e {sky130_fd_sc_hd__tap* sky130_fd_sc_hd__decap* sky130_fd_sc_hd__fill*} |& tee >&@stdout"
+
+Thu Dec 17 17:07:23 UTC 2020 - Executing "/openLANE_flow/scripts/libtrim.pl /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells > /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-07/tmp/trimmed.lib"
+
+Thu Dec 17 17:07:24 UTC 2020 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/IBEX_SoC/runs/17-12_17-07/logs/synthesis/yosys.log |& tee >&@stdout"
+

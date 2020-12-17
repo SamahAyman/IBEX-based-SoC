@@ -1,0 +1,105 @@
+Startpoint: HRESETn (input port clocked by HCLK)
+Endpoint: _128810_ (removal check against rising-edge clock HCLK)
+Path Group: **async_default**
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock HCLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   2.00    2.00 ^ input external delay
+   6.51    8.51 ^ HRESETn (in)
+   0.00    8.51 ^ _128810_/RESET_B (sky130_fd_sc_hd__dfrtp_4)
+           8.51   data arrival time
+
+   0.00    0.00   clock HCLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _128810_/CLK (sky130_fd_sc_hd__dfrtp_4)
+   2.33    2.33   library removal time
+           2.33   data required time
+---------------------------------------------------------
+           2.33   data required time
+          -8.51   data arrival time
+---------------------------------------------------------
+           6.18   slack (MET)
+
+
+Startpoint: _136006_ (rising edge-triggered flip-flop clocked by HCLK)
+Endpoint: _135927_ (rising edge-triggered flip-flop clocked by HCLK)
+Path Group: HCLK
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock HCLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _136006_/CLK (sky130_fd_sc_hd__dfrtp_4)
+   0.24    0.24 ^ _136006_/Q (sky130_fd_sc_hd__dfrtp_4)
+   0.00    0.24 ^ _135927_/D (sky130_fd_sc_hd__dfrtp_4)
+           0.24   data arrival time
+
+   0.00    0.00   clock HCLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+           0.00 ^ _135927_/CLK (sky130_fd_sc_hd__dfrtp_4)
+  -0.02   -0.02   library hold time
+          -0.02   data required time
+---------------------------------------------------------
+          -0.02   data required time
+          -0.24   data arrival time
+---------------------------------------------------------
+           0.26   slack (MET)
+
+
+Startpoint: HRESETn (input port clocked by HCLK)
+Endpoint: _135844_ (recovery check against rising-edge clock HCLK')
+Path Group: **async_default**
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock HCLK (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   2.00    2.00 ^ input external delay
+  12.37   14.37 ^ HRESETn (in)
+   0.00   14.37 ^ _135844_/RESET_B (sky130_fd_sc_hd__dfrtp_4)
+          14.37   data arrival time
+
+   5.00    5.00   clock HCLK' (rise edge)
+   0.00    5.00   clock network delay (ideal)
+   0.00    5.00   clock reconvergence pessimism
+           5.00 ^ _135844_/CLK (sky130_fd_sc_hd__dfrtp_4)
+  -8.46   -3.46   library recovery time
+          -3.46   data required time
+---------------------------------------------------------
+          -3.46   data required time
+         -14.37   data arrival time
+---------------------------------------------------------
+         -17.83   slack (VIOLATED)
+
+
+Startpoint: HCLK (clock source 'HCLK')
+Endpoint: PAD_fsclk_Sys0_S0 (output port clocked by HCLK)
+Path Group: HCLK
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock HCLK (rise edge)
+  29.09   29.09   clock network delay
+          29.09 ^ PAD_fsclk_Sys0_S0 (out)
+          29.09   data arrival time
+
+  10.00   10.00   clock HCLK (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -29.09   data arrival time
+---------------------------------------------------------
+         -21.09   slack (VIOLATED)
+
+

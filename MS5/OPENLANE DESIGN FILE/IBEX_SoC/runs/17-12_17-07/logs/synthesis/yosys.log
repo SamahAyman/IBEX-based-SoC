@@ -1,0 +1,175 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Liberty frontend.
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/spi_master.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/spi_master.v' to AST representation.
+Generating RTLIL representation for module `\spi_master'.
+Generating RTLIL representation for module `\sri'.
+Generating RTLIL representation for module `\sro'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_register_file_latch.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_register_file_latch.v' to AST representation.
+Generating RTLIL representation for module `\ibex_register_file_latch'.
+Warning: Replacing memory \mem with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/ibex_register_file_latch.v:111, /openLANE_flow/designs/IBEX_SoC/src/ibex_register_file_latch.v:87
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/PWM.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/PWM.v' to AST representation.
+Generating RTLIL representation for module `\PWM32'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_dummy_instr.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_dummy_instr.v' to AST representation.
+Generating RTLIL representation for module `\ibex_dummy_instr'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/AHBlite_GPIO.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/AHBlite_GPIO.v' to AST representation.
+Generating RTLIL representation for module `\AHBlite_GPIO'.
+/openLANE_flow/designs/IBEX_SoC/src/AHBlite_GPIO.v:63: Warning: Range [23:0] select out of bounds on signal `\HADDR': Setting 2 LSB bits to undef.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ana.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ana.v' to AST representation.
+Generating RTLIL representation for module `\ana'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_pmp.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_pmp.v' to AST representation.
+Generating RTLIL representation for module `\ibex_pmp'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_csr.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_csr.v' to AST representation.
+Generating RTLIL representation for module `\ibex_csr'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/prim_clock_gating.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/prim_clock_gating.v' to AST representation.
+Generating RTLIL representation for module `\prim_clock_gating'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_prefetch_buffer.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_prefetch_buffer.v' to AST representation.
+Generating RTLIL representation for module `\ibex_prefetch_buffer'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_if_stage.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_if_stage.v' to AST representation.
+Generating RTLIL representation for module `\ibex_if_stage'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_register_file_ff.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_register_file_ff.v' to AST representation.
+Generating RTLIL representation for module `\ibex_register_file_ff'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/AHBSRAM.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/AHBSRAM.v' to AST representation.
+Generating RTLIL representation for module `\AHBSRAM'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/qspi_xip_cache_ahb.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/qspi_xip_cache_ahb.v' to AST representation.
+Generating RTLIL representation for module `\QSPIXIP'.
+Warning: Replacing memory \CD with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/qspi_xip_cache_ahb.v:87
+Warning: Replacing memory \CT with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/qspi_xip_cache_ahb.v:86
+Generating RTLIL representation for module `\QSIXIP_INIT'.
+Generating RTLIL representation for module `\QSIXIP_RUN'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_fetch_fifo.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_fetch_fifo.v' to AST representation.
+Generating RTLIL representation for module `\ibex_fetch_fifo'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/soc_core_m1_b1.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/soc_core_m1_b1.v' to AST representation.
+Generating RTLIL representation for module `\soc_core_m1_b1'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_decoder.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_decoder.v' to AST representation.
+Generating RTLIL representation for module `\ibex_decoder'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_icache.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_icache.v' to AST representation.
+Generating RTLIL representation for module `\ibex_icache'.
+Warning: Replacing memory \fill_data_q with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/ibex_icache.v:509
+Warning: Replacing memory \fill_way_q with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/ibex_icache.v:496
+Warning: Replacing memory \fill_addr_q with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/ibex_icache.v:493
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/AHBlite_sys_0.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/AHBlite_sys_0.v' to AST representation.
+Generating RTLIL representation for module `\AHBlite_sys_0'.
+/openLANE_flow/designs/IBEX_SoC/src/AHBlite_sys_0.v:0: Warning: System task `$display' outside initial block is unsupported.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_cs_registers.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_cs_registers.v' to AST representation.
+Generating RTLIL representation for module `\ibex_cs_registers'.
+Warning: Replacing memory \mhpmevent with list of registers. See /openLANE_flow/designs/IBEX_SoC/src/ibex_cs_registers.v:1122
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_ex_block.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_ex_block.v' to AST representation.
+Generating RTLIL representation for module `\ibex_ex_block'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_branch_predict.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_branch_predict.v' to AST representation.
+Generating RTLIL representation for module `\ibex_branch_predict'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/ibex_compressed_decoder.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/ibex_compressed_decoder.v' to AST representation.
+Generating RTLIL representation for module `\ibex_compressed_decoder'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/APB_sys_0.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/APB_sys_0.v' to AST representation.
+Generating RTLIL representation for module `\apb_sys_0'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/soc_m1_b1.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/soc_m1_b1.v' to AST representation.
+Generating RTLIL representation for module `\soc_m1_b1'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: /openLANE_flow/designs/IBEX_SoC/src/PWM_VIP.v
+Parsing Verilog input from `/openLANE_flow/designs/IBEX_SoC/src/PWM_VIP.v' to AST representation.
+Generating RTLIL representation for module `\PWM_VIP'.
+/openLANE_flow/designs/IBEX_SoC/src/PWM_VIP.v:0: Warning: System task `$display' outside initial block is unsupported.
+/openLANE_flow/designs/IBEX_SoC/src/PWM_VIP.v:0: ERROR: System task `$finish' outside initial block is unsupported.
