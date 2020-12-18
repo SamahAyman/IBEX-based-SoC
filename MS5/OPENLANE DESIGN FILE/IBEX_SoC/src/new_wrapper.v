@@ -105,13 +105,13 @@ module ibex_wrapper
   always @* begin
    nstate = S0;
     case (state)
-      S0  : //if(data_req_o) nstate = S3; else if(instr_req_o) nstate = S1; else nstate = S0; else nstate = S0;
-      		case ({data_req_o, instr_req_o})
-		2'b00: nstate = S0;
-		2'b01: nstate = S1;
-		2'b10: nstate = S3;
-		2'b11: nstate = S3;
-		endcase
+      S0 : //if(data_req_o) nstate = S3; else if(instr_req_o) nstate = S1; else nstate = S0; else nstate = S0;
+        case ({data_req_o, instr_req_o})
+          2'b00: nstate = S0;
+          2'b01: nstate = S1;
+          2'b10: nstate = S3;
+          2'b11: nstate = S3;
+		    endcase
       S1  : nstate = S2;
       S2  : if(instr_rvalid_i) nstate = S0; else nstate = S2;
       S3  : nstate = S4;
