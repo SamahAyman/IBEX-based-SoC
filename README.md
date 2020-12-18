@@ -37,9 +37,9 @@ Just like the designing tools, the entire project is manfactured using opensourc
 
 1. [SoC GeN](https://github.com/habibagamal/SoC_Automation)
 2. [openLANE](https://github.com/efabless/openlane)
-3. [Caravel]
-4. [GTKwave]
-5. [Icarus Verilog]
+3. [Caravel](https://github.com/efabless/caravel)
+4. [GTKwave](https://github.com/gtkwave/gtkwave)
+5. [Icarus Verilog](http://iverilog.icarus.com/)
 6. [magic](http://opencircuitdesign.com/magic/index.html)
 
 
