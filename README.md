@@ -37,6 +37,12 @@ Just like the designing tools, the entire project is manfactured using opensourc
 
 1. [SoC GeN](https://github.com/habibagamal/SoC_Automation)
 2. [openLANE](https://github.com/efabless/openlane)
+3. [Caravel]
+4. [GTKwave]
+5. [Icarus Verilog]
+6. [magic](http://opencircuitdesign.com/magic/index.html)
+
+
 
 
 ![main tools](./image/maintools.png)
@@ -86,6 +92,8 @@ here is a quick description of the main AHB signals:
 <br>
 
 you can find the full description of IBEX signals in their [documentation](https://ibex-core.readthedocs.io/en/latest/02_user/integration.html)
+
+![mapping](./image/wrapper.png)
 
 > you details of each signal could be found in the `new wrapper.v` in our src folder.
 
@@ -181,6 +189,14 @@ designs/IBEX_SoC
 ----
 ### **Integerating with Caraval**
 </br> 
+#### **Getting started** 
+
+We started by cloning the repo and uncompressing the files.
+```
+git clone https://github.com/efabless/caravel.git
+cd caravel
+make uncompress
+```
 
 As spacified by *Caravel's documentation*,  our project is inserted into `user_project_wrapper` sub-directory. Then, the hardened SoC MACRO is integered with the caravel template. 
 
@@ -193,7 +209,6 @@ here is an image from the hardened caravel before inseting our design:
 
 ----
 ### **Tests & Results**
-</br> 
 
 #### **design verification**:
 
