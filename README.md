@@ -40,6 +40,8 @@ Just like the designing tools, the entire project is manfactured using opensourc
 3. [Caravel]
 4. [GTKwave]
 5. [Icarus Verilog]
+6. [magic](http://opencircuitdesign.com/magic/index.html)
+
 
 
 
@@ -157,6 +159,14 @@ designs/IBEX_SoC
 ----
 ### **Integerating with Caraval**
 </br> 
+#### **Getting started** 
+
+We started by cloning the repo and uncompressing the files.
+```
+git clone https://github.com/efabless/caravel.git
+cd caravel
+make uncompress
+```
 
 As spacified by *Caravel's documentation*,  our project is inserted into `user_project_wrapper` sub-directory. Then, the hardened SoC MACRO is integered with the caravel template. 
 
