@@ -64,7 +64,9 @@ Also, our SoC is supposed to communicate with other components through AHB Bus I
 ### **wrapper description**
 
 
-![wrapper block diagram](./image/wrappr_BD.png)
+![wrapper](./image/wrapper_BD.png)
+
+
 ---
 
 ### **Generating the SoC**
