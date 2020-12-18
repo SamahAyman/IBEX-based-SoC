@@ -37,6 +37,10 @@ Just like the designing tools, the entire project is manfactured using opensourc
 
 1. [SoC GeN](https://github.com/habibagamal/SoC_Automation)
 2. [openLANE](https://github.com/efabless/openlane)
+3. [Caravel]
+4. [GTKwave]
+5. [Icarus Verilog]
+
 
 
 ![main tools](./image/maintools.png)
@@ -57,8 +61,10 @@ To perfom the conversion you would need to go to the */util* directoty inside IB
 
 Also, our SoC is supposed to communicate with other components through AHB Bus Interface. So, we designed a **wrapper** to make our system compatible with AHB standard signals.
 
-### **wrapper description
+### **wrapper description**
 
+
+![wrapper block diagram](./image/wrappr_BD.png)
 ---
 
 ### **Generating the SoC**
