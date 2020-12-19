@@ -13,7 +13,7 @@
 ## Project Description:
 
 
-This is an SoC based on IBEX, a riscV based core, built for *Digital Design 2 Course @ AUC*, to be submitted and manufactured by *Google Shuttle*.
+This is an SoC based on IBEX, a riscV based core, manifactured for *Digital Design 2 Course @ AUC*, to be submitted and manufactured by *Google Shuttle*.
 
 It is designed entirely using open source EDA tools ... 
 
@@ -39,7 +39,7 @@ Just like the designing tools, the entire project is manfactured using opensourc
 2. [openLANE](https://github.com/efabless/openlane)
 3. [Caravel](https://github.com/efabless/caravel)
 4. [GTKwave](https://github.com/gtkwave/gtkwave)
-5. [Icarus Verilog](http://iverilog.icarus.com/)
+5. [Icarus Verilog](https://github.com/icarus-sim/icarus)
 6. [magic](http://opencircuitdesign.com/magic/index.html)
 
 
@@ -63,41 +63,11 @@ To perfom the conversion you would need to go to the */util* directoty inside IB
 
 Also, our SoC is supposed to communicate with other components through AHB Bus Interface. So, we designed a **wrapper** to make our system compatible with AHB standard signals.
 
-### **Wrapper description**
+### **wrapper description**
 
-The wrapper's main mission was producing AHB compatible signals from our IBEX core. We did this through instantiating the core inside our wrapper and mapped its signals to AHB signals through the following FSM:
 
-![fsm](./image/fsm.png)
+![wrapper](./image/wrapper.png)
 
-It mainly has four states: 
-* idle
-* data request
-* instruction request
-* waiting for the response
-
-here is a quick description of the main AHB signals:
-
-|Signal | Description |
-|-------| ------------|
-|HCLK   |clock singal |
-|HRESETn| reset signal|
-|HADDR  |the address to be used for the transfer|
-|HSIZE|indicates the size of a data transfer. <br> 000 => byte <br> 001 => Half word <br> 010 => word|
-|HTRANS| state of the transfare <br> 00 => idle <br> 01 => busy <br> 10 => NON SEQUENTIAL|
-|HREADY|indicates previous transfer is complete|
-|HRDATA|The slave output to the master|
-|HWRITE| enable write to slaves|
-|HWDATA| data to be written in slave|
-
-<br>
-
-you can find the full description of IBEX signals in their [documentation](https://ibex-core.readthedocs.io/en/latest/02_user/integration.html)
-
-![mapping](./image/wrapper.png)
-
-> you details of each signal could be found in the `new wrapper.v` in our src folder.
-
->Special thanks to our professor @shalan for helping us with it.
 
 ---
 
@@ -189,7 +159,7 @@ designs/IBEX_SoC
 ----
 ### **Integerating with Caraval**
 </br> 
-#### **Getting started** 
+### **Getting started** 
 
 We started by cloning the repo and uncompressing the files.
 ```
@@ -198,17 +168,46 @@ cd caravel
 make uncompress
 ```
 
+Then we installed the required version of the PDK as well as Magic VLSI Layout Tool to run open_pdks -- version >= 8.3.60
+To install PDK we used the following commands:
+```
+export PDK_ROOT=<The place where you want to install the pdk>
+make pdk
+```
+
+We put our user_project_wrapper.gds under ./gds/ in the Caravel directory.
+Inside Caravel we export the following:
+```
+export PDK_ROOT=<The location where the pdk is installed>
+export OPENLANE_ROOT=<the absolute path to the openlane directory cloned or to be cloned>
+export IMAGE_NAME=<the openlane image name installed on your machine. Preferably openlane:rc6>
+export CARAVEL_PATH=$(pwd)
+```
+Then, we mount the docker:
+```
+docker run -it -v $CARAVEL_PATH:$CARAVEL_PATH -v $OPENLANE_ROOT:/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e CARAVEL_PATH=$CARAVEL_PATH -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) $IMAGE_NAME
+```
+Finally, once inside the docker we run the following commands:
+```
+cd $CARAVEL_PATH
+make
+exit
+```
+
+
 As spacified by *Caravel's documentation*,  our project is inserted into `user_project_wrapper` sub-directory. Then, the hardened SoC MACRO is integered with the caravel template. 
 
 here is an image from the hardened caravel before inseting our design:
 
 ![caravel](./image/caravel.png)
 
+
 > **NOTE**: currently, caravel is a *WIP*, so there is a number of magic DRC with the final output. 
 
 
 ----
 ### **Tests & Results**
+</br> 
 
 #### **design verification**:
 
