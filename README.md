@@ -144,7 +144,7 @@ we did some experimentations on the config.tcl file to find out the optimum conf
 
 ![Configurations experiemnts](./image/configurations_table.PNG)
 
-Notes:\ 
+Notes:<br/>
 ●	All the magic violations are false positives because they are minimum hole violations.\
 ●	Going below 3.5 for PL_TARGET_DENSITY configuration or setting SYNTH_STRATEGY to 1 result in segmentation violation.\
 ●	Since, segmentation violation is not a descriptive error, so the error is hard to be figured out. Setting PL_TARGET_DENSITY to 3.5 and SYNTH_STRATEGY to 1 should be avoided.\ 
