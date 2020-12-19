@@ -142,7 +142,7 @@ The config file is included in **** directory
 
 we did some experimentations on the config.tcl file to find out the optimum configuration settings ...You can find different configurations trials in MS2 "Report.pdf" where we have a table with different options and the corresponding results. 
 
-![ibex Hardening results]()
+![ibex Hardening results](./image/ibex_core_gds.png)
 
 just like the output of any hardened design using openlane, this was the structure of the output:
 

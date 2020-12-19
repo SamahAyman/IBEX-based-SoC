@@ -1,0 +1,29 @@
+
+64. Printing statistics.
+
+=== IBEX_SoC_S ===
+
+   Number of wires:              30722
+   Number of wire bits:          37481
+   Number of public wires:         464
+   Number of public wire bits:    7223
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              37050
+     $_ANDNOT_                    7670
+     $_AND_                        793
+     $_MUX_                      11090
+     $_NAND_                       555
+     $_NOR_                       1046
+     $_NOT_                       2021
+     $_ORNOT_                      704
+     $_OR_                        5744
+     $_XNOR_                       452
+     $_XOR_                       1075
+     sky130_fd_sc_hd__dfrtp_4     2419
+     sky130_fd_sc_hd__dfstp_4       51
+     sky130_fd_sc_hd__dfxtp_4     3407
+     sky130_fd_sc_hd__dlclkp_1       1
+     sky130_fd_sc_hd__ebufn_2       22
+

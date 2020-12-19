@@ -1,0 +1,60 @@
+
+72. Printing statistics.
+
+=== IBEX_SoC_S ===
+
+   Number of wires:              48583
+   Number of wire bits:          48611
+   Number of public wires:        5931
+   Number of public wire bits:    5959
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              48599
+     sky130_fd_sc_hd__a2111o_4     373
+     sky130_fd_sc_hd__a2111oi_4    395
+     sky130_fd_sc_hd__a211o_4     1422
+     sky130_fd_sc_hd__a21bo_4      104
+     sky130_fd_sc_hd__a21boi_4     265
+     sky130_fd_sc_hd__a21o_4      4819
+     sky130_fd_sc_hd__a21oi_4     1135
+     sky130_fd_sc_hd__a22oi_4      150
+     sky130_fd_sc_hd__a2bb2o_4      95
+     sky130_fd_sc_hd__a2bb2oi_4     80
+     sky130_fd_sc_hd__a32o_4       159
+     sky130_fd_sc_hd__a32oi_4      164
+     sky130_fd_sc_hd__a41o_4       223
+     sky130_fd_sc_hd__a41oi_4      187
+     sky130_fd_sc_hd__and2_4      1189
+     sky130_fd_sc_hd__and3_4       818
+     sky130_fd_sc_hd__and4_4      5063
+     sky130_fd_sc_hd__buf_2      11785
+     sky130_fd_sc_hd__buf_4         19
+     sky130_fd_sc_hd__conb_1         4
+     sky130_fd_sc_hd__dfrtp_4     2396
+     sky130_fd_sc_hd__dfstp_4       51
+     sky130_fd_sc_hd__dfxtp_4     3407
+     sky130_fd_sc_hd__dlclkp_1       1
+     sky130_fd_sc_hd__ebufn_2       22
+     sky130_fd_sc_hd__inv_2       2064
+     sky130_fd_sc_hd__nand2_4     1551
+     sky130_fd_sc_hd__nand3_4     1462
+     sky130_fd_sc_hd__nand4_4     1375
+     sky130_fd_sc_hd__nor2_4      2091
+     sky130_fd_sc_hd__nor3_4       507
+     sky130_fd_sc_hd__nor4_4        71
+     sky130_fd_sc_hd__o21a_4      1717
+     sky130_fd_sc_hd__o21ai_4     1932
+     sky130_fd_sc_hd__o22a_4        82
+     sky130_fd_sc_hd__o32a_4        13
+     sky130_fd_sc_hd__o32ai_4       44
+     sky130_fd_sc_hd__o41a_4        88
+     sky130_fd_sc_hd__o41ai_4       33
+     sky130_fd_sc_hd__or2_4        338
+     sky130_fd_sc_hd__or3_4         26
+     sky130_fd_sc_hd__or4_4          7
+     sky130_fd_sc_hd__xnor2_4      498
+     sky130_fd_sc_hd__xor2_4       374
+
+   Chip area for module '\IBEX_SoC_S': 657330.432000
+

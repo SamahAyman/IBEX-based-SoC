@@ -1,0 +1,360 @@
+
+reading lef ...
+
+units:       1000
+#layers:     13
+#macros:     438
+#vias:       25
+#viarulegen: 25
+
+reading def ...
+defIn read 10000 components
+defIn read 20000 components
+defIn read 30000 components
+defIn read 40000 components
+defIn read 50000 components
+defIn read 60000 components
+defIn read 70000 components
+defIn read 80000 components
+defIn read 90000 components
+defIn read 100000 components
+defIn read 200000 components
+defIn read 300000 components
+defIn read 400000 components
+defIn read 500000 components
+defIn read 600000 components
+defIn read 700000 components
+defIn read 800000 components
+defIn read 10000 nets
+defIn read 20000 nets
+defIn read 30000 nets
+defIn read 40000 nets
+
+design:      IBEX_SoC_S
+die area:    ( 0 0 ) ( 2920000 3520000 )
+trackPts:    12
+defvias:     2
+#components: 856635
+#terminals:  99
+#snets:      2
+#nets:       49686
+
+reading guide ...
+guideIn read 100000 guides
+guideIn read 200000 guides
+guideIn read 300000 guides
+guideIn read 400000 guides
+
+#guides:     415881
+Warning: met2 does not have viaDef align with layer direction, generating new viaDef via2_FR...
+Warning: met4 does not have viaDef align with layer direction, generating new viaDef via4_FR...
+done initConstraintLayerIdx
+List of default vias:
+  Layer mcon
+    default via: L1M1_PR_MR
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: via2_FR
+  Layer via3
+    default via: M3M4_PR_M
+  Layer via4
+    default via: via4_FR
+Writing reference output def...
+
+libcell analysis ...
+
+instance analysis ...
+  complete 10000 instances
+  complete 20000 instances
+  complete 30000 instances
+  complete 40000 instances
+  complete 50000 instances
+  complete 60000 instances
+  complete 70000 instances
+  complete 80000 instances
+  complete 90000 instances
+  complete 100000 instances
+  complete 200000 instances
+  complete 300000 instances
+  complete 400000 instances
+  complete 500000 instances
+  complete 600000 instances
+  complete 700000 instances
+  complete 800000 instances
+#unique instances = 109
+
+init region query ...
+  complete 10000 insts
+  complete 20000 insts
+  complete 30000 insts
+  complete 40000 insts
+  complete 50000 insts
+  complete 60000 insts
+  complete 70000 insts
+  complete 80000 insts
+  complete 90000 insts
+  complete 100000 insts
+  complete 200000 insts
+  complete 300000 insts
+  complete 400000 insts
+  complete 500000 insts
+  complete 600000 insts
+  complete 700000 insts
+  complete 800000 insts
+  complete FR_MASTERSLICE
+  complete FR_VIA
+  complete li1
+  complete mcon
+  complete met1
+  complete via
+  complete met2
+  complete via2
+  complete met3
+  complete via3
+  complete met4
+  complete via4
+  complete met5
+
+FR_MASTERSLICE shape region query size = 0
+FR_VIA shape region query size = 0
+li1 shape region query size = 6211220
+mcon shape region query size = 16308912
+met1 shape region query size = 1819314
+via shape region query size = 0
+met2 shape region query size = 19
+via2 shape region query size = 0
+met3 shape region query size = 26
+via3 shape region query size = 0
+met4 shape region query size = 108
+via4 shape region query size = 840
+met5 shape region query size = 200
+
+
+start pin access
+  complete 100 pins
+Error: no ap for uut.IBEX.core.core_clock_gate_i.clk_gate/CLK
+  complete 200 pins
+  complete 300 pins
+  complete 381 pins
+Error: pin does not have access point
+Error: pin does not have valid ap
+Error: pin does not have valid ap
+Error: pin does not have valid ap
+Error: pin does not have valid ap
+  complete 100 unique inst patterns
+  complete 103 unique inst patterns
+  complete 1000 groups
+  complete 2000 groups
+  complete 3000 groups
+  complete 4000 groups
+  complete 5000 groups
+  complete 6000 groups
+  complete 7000 groups
+  complete 8000 groups
+  complete 9000 groups
+  complete 10000 groups
+  complete 20000 groups
+  complete 30000 groups
+  complete 40000 groups
+  complete 49499 groups
+Expt1 runtime (pin-level access point gen): 0.453145
+Expt2 runtime (design-level access pattern gen): 0.172446
+#scanned instances     = 856635
+#unique  instances     = 109
+#stdCellGenAp          = 2865
+#stdCellValidPlanarAp  = 62
+#stdCellValidViaAp     = 1851
+#stdCellPinNoAp        = 1
+#stdCellPinCnt         = 171030
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+
+complete pin access
+cpu time = 00:00:08, elapsed time = 00:00:01, memory = 1515.09 (MB), peak = 2033.98 (MB)
+
+post process guides ...
+GCELLGRID X -1 DO 510 STEP 6900 ;
+GCELLGRID Y -1 DO 423 STEP 6900 ;
+  complete 10000 orig guides
+  complete 20000 orig guides
+  complete 30000 orig guides
+  complete 40000 orig guides
+  complete 50000 orig guides
+  complete 60000 orig guides
+  complete 70000 orig guides
+  complete 80000 orig guides
+  complete 90000 orig guides
+  complete 100000 orig guides
+  complete 200000 orig guides
+  complete 300000 orig guides
+  complete 400000 orig guides
+  complete FR_MASTERSLICE
+  complete FR_VIA
+  complete li1
+  complete mcon
+  complete met1
+  complete via
+  complete met2
+  complete via2
+  complete met3
+  complete via3
+  complete met4
+  complete via4
+  complete met5
+  complete 10000 nets
+  complete 20000 nets
+  complete 30000 nets
+  complete 40000 nets
+
+building cmap ... 
+
+init guide query ...
+  complete 10000 nets (guide)
+  complete 20000 nets (guide)
+  complete 30000 nets (guide)
+  complete 40000 nets (guide)
+  complete FR_MASTERSLICE (guide)
+  complete FR_VIA (guide)
+  complete li1 (guide)
+  complete mcon (guide)
+  complete met1 (guide)
+  complete via (guide)
+  complete met2 (guide)
+  complete via2 (guide)
+  complete met3 (guide)
+  complete via3 (guide)
+  complete met4 (guide)
+  complete via4 (guide)
+  complete met5 (guide)
+
+FR_MASTERSLICE guide region query size = 0
+FR_VIA guide region query size = 0
+li1 guide region query size = 150007
+mcon guide region query size = 0
+met1 guide region query size = 135949
+via guide region query size = 0
+met2 guide region query size = 78091
+via2 guide region query size = 0
+met3 guide region query size = 3291
+via3 guide region query size = 0
+met4 guide region query size = 1403
+via4 guide region query size = 0
+met5 guide region query size = 87
+
+init gr pin query ...
+
+
+start track assignment
+Done with 229501 vertical wires in 9 frboxes and 139327 horizontal wires in 11 frboxes.
+Done with 40661 vertical wires in 9 frboxes and 54887 horizontal wires in 11 frboxes.
+
+complete track assignment
+cpu time = 00:01:35, elapsed time = 00:00:23, memory = 2156.62 (MB), peak = 4881.43 (MB)
+
+post processing ...
+
+start routing data preparation
+initVia2ViaMinLen_minSpc li1 (d2d, d2u, u2d, u2u) = (0, 0, 0, 370)
+initVia2ViaMinLen_minSpc met1 (d2d, d2u, u2d, u2u) = (430, 445, 445, 460)
+initVia2ViaMinLen_minSpc met2 (d2d, d2u, u2d, u2u) = (460, 485, 485, 630)
+initVia2ViaMinLen_minSpc met3 (d2d, d2u, u2d, u2u) = (630, 655, 655, 680)
+initVia2ViaMinLen_minSpc met4 (d2d, d2u, u2d, u2u) = (630, 1055, 1055, 3020)
+initVia2ViaMinLen_minSpc met5 (d2d, d2u, u2d, u2u) = (1480, 0, 0, 0)
+initVia2ViaMinLen_minimumcut li1 (d2d, d2u, u2d, u2u) = (0, 0, 0, 370)
+initVia2ViaMinLen_minimumcut li1 zerolen (b, b, b, b) = (1, 1, 1, 1)
+initVia2ViaMinLen_minimumcut met1 (d2d, d2u, u2d, u2u) = (430, 445, 445, 460)
+initVia2ViaMinLen_minimumcut met1 zerolen (b, b, b, b) = (1, 1, 1, 1)
+initVia2ViaMinLen_minimumcut met2 (d2d, d2u, u2d, u2u) = (460, 485, 485, 630)
+initVia2ViaMinLen_minimumcut met2 zerolen (b, b, b, b) = (1, 1, 1, 1)
+initVia2ViaMinLen_minimumcut met3 (d2d, d2u, u2d, u2u) = (630, 655, 655, 680)
+initVia2ViaMinLen_minimumcut met3 zerolen (b, b, b, b) = (1, 1, 1, 1)
+initVia2ViaMinLen_minimumcut met4 (d2d, d2u, u2d, u2u) = (630, 1055, 1055, 3020)
+initVia2ViaMinLen_minimumcut met4 zerolen (b, b, b, b) = (1, 1, 1, 1)
+initVia2ViaMinLen_minimumcut met5 (d2d, d2u, u2d, u2u) = (1480, 0, 0, 0)
+initVia2ViaMinLen_minimumcut met5 zerolen (b, b, b, b) = (1, 1, 1, 1)
+initVia2ViaMinLenNew_minSpc li1 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (0, 0, 0, 0, 0, 0, 430, 370)
+initVia2ViaMinLenNew_minSpc met1 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (430, 370, 445, 385, 445, 385, 460, 460)
+initVia2ViaMinLenNew_minSpc met2 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (460, 460, 410, 485, 410, 485, 630, 630)
+initVia2ViaMinLenNew_minSpc met3 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (630, 630, 655, 625, 655, 625, 680, 630)
+initVia2ViaMinLenNew_minSpc met4 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (680, 630, 1055, 1055, 1055, 1055, 3020, 3020)
+initVia2ViaMinLenNew_minSpc met5 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (1480, 1480, 0, 0, 0, 0, 0, 0)
+initVia2ViaMinLenNew_minimumcut li1 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (0, 0, 0, 0, 0, 0, 430, 370)
+initVia2ViaMinLenNew_minimumcut met1 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (430, 370, 445, 385, 445, 385, 460, 460)
+initVia2ViaMinLenNew_minimumcut met2 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (460, 460, 410, 485, 410, 485, 630, 630)
+initVia2ViaMinLenNew_minimumcut met3 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (630, 630, 655, 625, 655, 625, 680, 630)
+initVia2ViaMinLenNew_minimumcut met4 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (680, 630, 1055, 1055, 1055, 1055, 3020, 3020)
+initVia2ViaMinLenNew_minimumcut met5 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (1480, 1480, 0, 0, 0, 0, 0, 0)
+initVia2ViaMinLenNew_cutSpc li1 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (0, 0, 0, 0, 0, 0, 430, 370)
+initVia2ViaMinLenNew_cutSpc met1 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (430, 370, 445, 385, 445, 385, 460, 460)
+initVia2ViaMinLenNew_cutSpc met2 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (460, 460, 410, 485, 410, 485, 630, 630)
+initVia2ViaMinLenNew_cutSpc met3 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (630, 630, 655, 625, 655, 625, 680, 630)
+initVia2ViaMinLenNew_cutSpc met4 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (680, 630, 1055, 1055, 1055, 1055, 3020, 3020)
+initVia2ViaMinLenNew_cutSpc met5 (d2d-x, d2d-y, d2u-x, d2u-y, u2d-x, u2d-y, u2u-x, u2u-y) = (1600, 1600, 0, 0, 0, 0, 0, 0)
+cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2156.63 (MB), peak = 4881.43 (MB)
+
+start detail routing ...
+start 0th optimization iteration ...
+    completing 10% with 0 violations
+    elapsed time = 00:00:05, memory = 2465.72 (MB)
+    completing 20% with 0 violations
+    elapsed time = 00:00:40, memory = 2664.04 (MB)
+    completing 30% with 65315 violations
+    elapsed time = 00:00:52, memory = 2671.36 (MB)
+    completing 40% with 65315 violations
+    elapsed time = 00:01:23, memory = 2711.49 (MB)
+    completing 50% with 98428 violations
+    elapsed time = 00:01:47, memory = 2652.94 (MB)
+    completing 60% with 98366 violations
+    elapsed time = 00:01:51, memory = 2683.77 (MB)
+    completing 70% with 98366 violations
+    elapsed time = 00:02:38, memory = 2759.66 (MB)
+    completing 80% with 139640 violations
+    elapsed time = 00:02:52, memory = 2559.77 (MB)
+    completing 90% with 139640 violations
+    elapsed time = 00:03:32, memory = 2773.81 (MB)
+    completing 100% with 145909 violations
+    elapsed time = 00:03:58, memory = 2781.98 (MB)
+  number of violations = 155961
+cpu time = 00:54:14, elapsed time = 00:04:03, memory = 3147.30 (MB), peak = 4881.43 (MB)
+total wire length = 4212269 um
+total wire length on LAYER li1 = 1398 um
+total wire length on LAYER met1 = 1692637 um
+total wire length on LAYER met2 = 2016312 um
+total wire length on LAYER met3 = 204932 um
+total wire length on LAYER met4 = 285294 um
+total wire length on LAYER met5 = 11693 um
+total number of vias = 419426
+up-via summary (total 419426):
+
+-------------------------
+ FR_MASTERSLICE         0
+            li1    170829
+           met1    228057
+           met2     15306
+           met3      5076
+           met4       158
+-------------------------
+                   419426
+
+
+start 1st optimization iteration ...
+    completing 10% with 155961 violations
+    elapsed time = 00:00:05, memory = 3147.49 (MB)
+    completing 20% with 155961 violations
+    elapsed time = 00:00:50, memory = 3210.95 (MB)
+    completing 30% with 147079 violations
+    elapsed time = 00:01:05, memory = 2946.21 (MB)
+    completing 40% with 147079 violations
+    elapsed time = 00:01:38, memory = 3170.93 (MB)
+    completing 50% with 139148 violations
+    elapsed time = 00:02:17, memory = 3072.55 (MB)
+    completing 60% with 139151 violations
+    elapsed time = 00:02:21, memory = 3121.27 (MB)
+    completing 70% with 139151 violations
+    elapsed time = 00:03:12, memory = 3223.94 (MB)
+    completing 80% with 131335 violations
+    elapsed time = 00:03:28, memory = 2915.01 (MB)

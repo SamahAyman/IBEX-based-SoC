@@ -1,0 +1,408 @@
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Error: cannot open '/.openroad'.
+Warning: /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib, line 31 default_operating_condition tt_025C_1v80 not found.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 438 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/results/cts/IBEX_SoC_S.cts.def
+Notice 0: Design: IBEX_SoC_S
+Notice 0: 		Created 100000 Insts
+Notice 0:     Created 47 pins.
+Notice 0:     Created 185546 components and 646618 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 49686 nets and 171030 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/results/cts/IBEX_SoC_S.cts.def
+[PARAMS] Min routing layer: 2
+[PARAMS] Max routing layer: 6
+[PARAMS] Global adjustment: 0
+[PARAMS] Unidirectional routing: 1
+[PARAMS] Grid origin: (-1, -1)
+[INFO] #DB Obstructions: 0
+[INFO] #DB Obstacles: 3246367
+[INFO] #DB Macros: 0
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VPWR has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[WARNING] Net VGND has wires outside die area
+[INFO] Found 0 clock nets
+[WARNING] Pin HCLK is outside die area
+[WARNING] Pin HRESETn is outside die area
+[WARNING] Pin Input_DATA[0] is outside die area
+[WARNING] Pin Input_DATA[1] is outside die area
+[WARNING] Pin Input_DATA[2] is outside die area
+[WARNING] Pin Input_DATA[3] is outside die area
+[WARNING] Pin Input_DATA[4] is outside die area
+[WARNING] Pin Input_DATA[5] is outside die area
+[WARNING] Pin Input_DATA[6] is outside die area
+[WARNING] Pin Input_DATA[7] is outside die area
+[WARNING] Pin Input_irq is outside die area
+[WARNING] Pin Output_DATA is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[0] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[10] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[11] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[12] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[13] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[14] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[15] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[1] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[2] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[3] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[4] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[5] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[6] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[7] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[8] is outside die area
+[WARNING] Pin PAD_GPIO_Sys0_S2[9] is outside die area
+[WARNING] Pin PAD_MSI_Sys0_SS0_S1 is outside die area
+[WARNING] Pin PAD_MSO_Sys0_SS0_S1 is outside die area
+[WARNING] Pin PAD_SCLK_Sys0_SS0_S1 is outside die area
+[WARNING] Pin PAD_SSn_Sys0_SS0_S1 is outside die area
+[WARNING] Pin PAD_fcen_Sys0_S0 is outside die area
+[WARNING] Pin PAD_fdio_Sys0_S0[0] is outside die area
+[WARNING] Pin PAD_fdio_Sys0_S0[1] is outside die area
+[WARNING] Pin PAD_fdio_Sys0_S0[2] is outside die area
+[WARNING] Pin PAD_fdio_Sys0_S0[3] is outside die area
+[WARNING] Pin PAD_fsclk_Sys0_S0 is outside die area
+[WARNING] Pin PAD_i2c_cl_Sys0_SS0_S0 is outside die area
+[WARNING] Pin PAD_i2c_da_Sys0_SS0_S0 is outside die area
+[WARNING] Pin PAD_pwm_Sys0_SS0_S2 is outside die area
+[WARNING] Pin db_reg_Sys0[0] is outside die area
+[WARNING] Pin db_reg_Sys0[1] is outside die area
+[WARNING] Pin db_reg_Sys0[2] is outside die area
+[WARNING] Pin db_reg_Sys0[3] is outside die area
+[INFO] Minimum degree: 2
+[INFO] Maximum degree: 2448
+[INFO] Processing 2287618 obstacles on layer 1
+[INFO] Processing 477136 obstacles on layer 2
+[INFO] Processing 4 obstacles on layer 5
+[INFO] Processing 50 obstacles on layer 6
+[INFO] Reducing resources of layer 1 by 99%
+[INFO] WIRELEN : 578212, WIRELEN1 : 0
+[INFO] NumSeg  : 126990
+[INFO] NumShift: 0
+First L Route
+[INFO] WIRELEN : 581155, WIRELEN1 : 581155
+[INFO] NumSeg  : 126411
+[INFO] NumShift: 4857
+[Overflow Report] Total hCap    : 6797538
+[Overflow Report] Total vCap    : 4737772
+[Overflow Report] Total Usage   : 581155
+[Overflow Report] Max H Overflow: 4
+[Overflow Report] Max V Overflow: 9
+[Overflow Report] Max Overflow  : 9
+[Overflow Report] Num Overflow e: 1021
+[Overflow Report] H   Overflow  : 54
+[Overflow Report] V   Overflow  : 2775
+[Overflow Report] Final Overflow: 2829
+
+Second L Route
+[Overflow Report] Total hCap    : 6797538
+[Overflow Report] Total vCap    : 4737772
+[Overflow Report] Total Usage   : 581155
+[Overflow Report] Max H Overflow: 4
+[Overflow Report] Max V Overflow: 8
+[Overflow Report] Max Overflow  : 8
+[Overflow Report] Num Overflow e: 996
+[Overflow Report] H   Overflow  : 38
+[Overflow Report] V   Overflow  : 2655
+[Overflow Report] Final Overflow: 2693
+
+First Z Route
+[Overflow Report] Total hCap    : 6797538
+[Overflow Report] Total vCap    : 4737772
+[Overflow Report] Total Usage   : 581155
+[Overflow Report] Max H Overflow: 2
+[Overflow Report] Max V Overflow: 8
+[Overflow Report] Max Overflow  : 8
+[Overflow Report] Num Overflow e: 954
+[Overflow Report] H   Overflow  : 12
+[Overflow Report] V   Overflow  : 2565
+[Overflow Report] Final Overflow: 2577
+
+[INFO] LV routing round 0, enlarge 10 
+[INFO] 10 threshold, 10 expand
+[Overflow Report] total Usage   : 581171
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 8
+[Overflow Report] Max Overflow  : 8
+[Overflow Report] Num Overflow e: 1065
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 3489
+[Overflow Report] Final Overflow: 3489
+
+[INFO] LV routing round 1, enlarge 15 
+[INFO] 5 threshold, 15 expand
+[Overflow Report] total Usage   : 581163
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 8
+[Overflow Report] Max Overflow  : 8
+[Overflow Report] Num Overflow e: 1074
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 3430
+[Overflow Report] Final Overflow: 3430
+
+[INFO] LV routing round 2, enlarge 20 
+[INFO] 1 threshold, 20 expand
+[Overflow Report] total Usage   : 581161
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 7
+[Overflow Report] Max Overflow  : 7
+[Overflow Report] Num Overflow e: 1048
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 3338
+[Overflow Report] Final Overflow: 3338
+
+Running extra iterations to remove overflow...
+Update congestion history type 1
+[INFO] iteration 1, enlarge 25, costheight 6, threshold 10 via cost 2 
+[INFO] log_coef 0.678907, healingTrigger 0 cost_step 2 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 592602
+[Overflow Report] Max H Overflow: 1
+[Overflow Report] Max V Overflow: 2
+[Overflow Report] Max Overflow  : 2
+[Overflow Report] Num Overflow e: 24
+[Overflow Report] H   Overflow  : 3
+[Overflow Report] V   Overflow  : 23
+[Overflow Report] Final Overflow: 26
+
+Update congestion history type 1
+[INFO] iteration 2, enlarge 30, costheight 11, threshold 6 via cost 2 
+[INFO] log_coef 1.181232, healingTrigger 0 cost_step 5 L 1 cost_type 1 updatetype 1
+[Overflow Report] total Usage   : 592541
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 0
+[Overflow Report] Max Overflow  : 0
+[Overflow Report] Num Overflow e: 0
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 0
+[Overflow Report] Final Overflow: 0
+
+Usage checked
+Maze routing finished
+[INFO] P3 runtime: 0.340000 sec
+[INFO] Final 2D results: 
+[Overflow Report] total Usage   : 592541
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 0
+[Overflow Report] Max Overflow  : 0
+[Overflow Report] Num Overflow e: 0
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 0
+[Overflow Report] Final Overflow: 0
+
+Layer Assignment Begins
+Layer assignment finished
+[INFO] 2D + Layer Assignment Runtime: 5.700000 sec
+Post Processing Begins 
+Post Processsing finished
+ Starting via filling
+[INFO] Via related to pin nodes 240935
+[INFO] Via related stiner nodes 18272
+Via filling finished
+
+Final usage/overflow report: 
+[INFO] Usage per layer: 
+    Layer 1 usage: 0
+    Layer 2 usage: 243945
+    Layer 3 usage: 287622
+    Layer 4 usage: 21159
+    Layer 5 usage: 38192
+    Layer 6 usage: 1731
+
+[INFO] Capacity per layer: 
+    Layer 1 capacity: 0
+    Layer 2 capacity: 4216164
+    Layer 3 capacity: 3230114
+    Layer 4 capacity: 2151778
+    Layer 5 capacity: 1507658
+    Layer 6 capacity: 429596
+
+[INFO] Use percentage per layer: 
+    Layer 1 use percentage: 0.0%
+    Layer 2 use percentage: 5.79%
+    Layer 3 use percentage: 8.90%
+    Layer 4 use percentage: 0.98%
+    Layer 5 use percentage: 2.53%
+    Layer 6 use percentage: 0.40%
+
+[INFO] Overflow per layer: 
+    Layer 1 overflow: 0
+    Layer 2 overflow: 0
+    Layer 3 overflow: 0
+    Layer 4 overflow: 0
+    Layer 5 overflow: 0
+    Layer 6 overflow: 0
+
+[Overflow Report] Total Usage   : 592649
+[Overflow Report] Total Capacity: 11535310
+[Overflow Report] Max H Overflow: 0
+[Overflow Report] Max V Overflow: 0
+[Overflow Report] Max Overflow  : 0
+[Overflow Report] H   Overflow  : 0
+[Overflow Report] V   Overflow  : 0
+[Overflow Report] Final Overflow: 0
+
+[INFO] Final usage          : 592649
+[INFO] Final number of vias : 294181
+[INFO] Final usage 3D       : 1475192
+[INFO] Total wirelength: 5199577 um
+[INFO] Num routed nets: 49677
+Warning: /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, line 32 default_operating_condition ss_100C_1v60 not found.
+Warning: /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib, line 31 default_operating_condition ff_n40C_1v95 not found.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 2.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 2.0
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+Warning: missing route to pin _91243_/RESET_B
+Warning: missing route to pin _91228_/RESET_B
+Warning: missing route to pin _91183_/RESET_B
+Warning: missing route to pin _91154_/RESET_B
+Warning: missing route to pin _91128_/RESET_B
+Warning: missing route to pin _91123_/RESET_B
+Warning: missing route to pin _91050_/RESET_B
+Warning: missing route to pin _91043_/RESET_B
+Warning: missing route to pin _91038_/RESET_B
+Warning: missing route to pin _91018_/RESET_B
+Warning: missing route to pin _91003_/RESET_B
+Warning: missing route to pin _90996_/RESET_B
+Warning: missing route to pin _90959_/RESET_B
+Warning: missing route to pin _90949_/RESET_B
+Warning: missing route to pin _90921_/RESET_B
+Warning: missing route to pin _90859_/RESET_B
+Warning: missing route to pin _90835_/RESET_B
+Warning: missing route to pin _90806_/RESET_B
+Warning: missing route to pin _90774_/RESET_B
+Warning: missing route to pin _90717_/RESET_B
+Warning: missing route to pin _90661_/RESET_B
+Warning: missing route to pin _90644_/RESET_B
+Warning: missing route to pin _90630_/RESET_B
+Warning: missing route to pin _90625_/RESET_B
+Warning: missing route to pin _90583_/RESET_B
+Warning: missing route to pin _90581_/RESET_B
+Warning: missing route to pin _90527_/RESET_B
+Warning: missing route to pin _90507_/RESET_B
+Warning: missing route to pin _90474_/RESET_B
+Warning: missing route to pin _90459_/RESET_B
+Warning: missing route to pin _90457_/RESET_B
+Warning: missing route to pin _90377_/RESET_B
+Warning: missing route to pin _90299_/RESET_B
+Warning: missing route to pin _90297_/RESET_B
+Warning: missing route to pin _90258_/RESET_B
+Warning: missing route to pin _90253_/RESET_B
+Warning: missing route to pin _90250_/RESET_B
+Warning: missing route to pin _90200_/RESET_B
+Warning: missing route to pin _90173_/RESET_B
+Warning: missing route to pin _90127_/RESET_B
+Warning: missing route to pin _90101_/RESET_B
+Warning: missing route to pin _90045_/RESET_B
+Warning: missing route to pin _90009_/RESET_B
+Warning: missing route to pin _89989_/RESET_B
+Warning: missing route to pin _89915_/RESET_B
+Warning: missing route to pin _89898_/RESET_B
+Warning: missing route to pin _89891_/RESET_B
+Warning: missing route to pin _89866_/RESET_B
+Warning: missing route to pin _89836_/RESET_B
+Warning: missing route to pin _89834_/RESET_B
+Warning: missing route to pin _89827_/RESET_B
+Warning: missing route to pin _89787_/RESET_B
+Warning: missing route to pin _89770_/RESET_B
+Warning: missing route to pin _89753_/RESET_B
+Warning: missing route to pin _89678_/RESET_B
+Warning: missing route to pin _89640_/RESET_B
+Warning: missing route to pin _89630_/RESET_B
+Warning: missing route to pin _89551_/RESET_B
+Warning: missing route to pin _89496_/RESET_B
+Warning: missing route to pin _89460_/RESET_B
+Warning: missing route to pin _89447_/RESET_B
+Warning: missing route to pin _89431_/RESET_B
+Warning: missing route to pin _89417_/RESET_B
+Warning: missing route to pin _89302_/RESET_B
+Warning: missing route to pin _89301_/RESET_B
+Warning: missing route to pin _89279_/RESET_B
+Warning: missing route to pin _89257_/RESET_B
+Warning: missing route to pin _89244_/RESET_B
+Warning: missing route to pin _89163_/RESET_B
+Warning: missing route to pin _89101_/RESET_B
+Warning: missing route to pin _89093_/RESET_B
+Warning: missing route to pin _88988_/RESET_B
+Warning: missing route to pin _88963_/RESET_B
+Warning: missing route to pin _88924_/RESET_B
+Warning: missing route to pin _88923_/RESET_B
+Warning: missing route to pin _88907_/RESET_B
+Warning: missing route to pin _88887_/RESET_B
+Warning: missing route to pin _88832_/RESET_B
+Warning: missing route to pin _88814_/RESET_B
+Warning: missing route to pin _59439_/X

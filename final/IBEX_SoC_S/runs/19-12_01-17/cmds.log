@@ -1,0 +1,50 @@
+Sat Dec 19 01:17:07 UTC 2020 - Executing "/openLANE_flow/scripts/mergeLef.py -i /pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} -o /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Sat Dec 19 01:17:07 UTC 2020 - Executing "/openLANE_flow/scripts/libtrim.pl /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells > /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/trimmed.lib"
+
+Sat Dec 19 01:17:08 UTC 2020 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Sat Dec 19 01:17:08 UTC 2020 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/synthesis/yosys.log |& tee >&@stdout"
+
+Sat Dec 19 01:18:30 UTC 2020 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/IBEX_SoC_S\/runs\/19-12_01-17\/results\/synthesis\/IBEX_SoC_S.synthesis.v/} /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/config.tcl"
+
+Sat Dec 19 01:18:30 UTC 2020 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/config.tcl"
+
+Sat Dec 19 01:18:30 UTC 2020 - Executing "sed -i /defparam/d /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/results/synthesis/IBEX_SoC_S.synthesis.v"
+
+Sat Dec 19 01:18:30 UTC 2020 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/synthesis/opensta.log"
+
+Sat Dec 19 01:18:33 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/floorplan/verilog2def.openroad.log"
+
+Sat Dec 19 01:18:35 UTC 2020 - Executing "python3 /openLANE_flow/scripts/io_place.py --input-lef /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/merged.lef --input-def /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/floorplan/verilog2def_openroad.def --config /openLANE_flow/designs/IBEX_SoC_S/pin_order.cfg --hor-layer 4 --ver-layer 3 --ver-width-mult 4 --hor-width-mult 4 --hor-extension 4.8 --ver-extension 4.8 --length 2.4 -o /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/floorplan/ioPlacer.def |& tee /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/floorplan/place_io_ol.log >&@stdout"
+
+Sat Dec 19 01:18:36 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/floorplan/tapcell.log"
+
+Sat Dec 19 01:18:46 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/new_pdn.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/floorplan/pdn.log"
+
+Sat Dec 19 01:18:55 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/placement/replace.log"
+
+Sat Dec 19 01:20:37 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/placement/opendp.log"
+
+Sat Dec 19 01:20:40 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_cts.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/cts/cts.log"
+
+Sat Dec 19 01:21:46 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/write_verilog.log"
+
+Sat Dec 19 01:21:48 UTC 2020 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/IBEX_SoC_S\/runs\/19-12_01-17\/results\/synthesis\/IBEX_SoC_S.synthesis_cts.v/} /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/config.tcl"
+
+Sat Dec 19 01:21:48 UTC 2020 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/IBEX_SoC_S\/runs\/19-12_01-17\/results\/synthesis\/IBEX_SoC_S.synthesis.v/} /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/config.tcl"
+
+Sat Dec 19 01:21:48 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_route.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/routing/fastroute.log"
+
+Sat Dec 19 01:22:19 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_fill.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/routing/addspacers.log"
+
+Sat Dec 19 01:22:22 UTC 2020 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/write_verilog.log"
+
+Sat Dec 19 01:22:27 UTC 2020 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/IBEX_SoC_S\/runs\/19-12_01-17\/results\/synthesis\/IBEX_SoC_S.synthesis_preroute.v/} /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/config.tcl"
+
+Sat Dec 19 01:22:27 UTC 2020 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/IBEX_SoC_S\/runs\/19-12_01-17\/results\/synthesis\/IBEX_SoC_S.synthesis_cts.v/} /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/config.tcl"
+
+Sat Dec 19 01:22:27 UTC 2020 - Executing "envsubst < /openLANE_flow/scripts/tritonRoute.param > /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/routing/tritonRoute.param"
+
+Sat Dec 19 01:22:27 UTC 2020 - Executing "TritonRoute /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/routing/tritonRoute.param |& tee >&@stdout /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/logs/routing/tritonRoute.log"
+

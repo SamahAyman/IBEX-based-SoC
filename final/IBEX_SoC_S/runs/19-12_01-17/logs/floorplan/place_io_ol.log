@@ -1,0 +1,18 @@
+Notice 0: Reading LEF file:  /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/merged.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 438 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/floorplan/verilog2def_openroad.def
+Notice 0: Design: IBEX_SoC_S
+Notice 0:     Created 45 pins.
+Notice 0:     Created 48599 components and 363280 component-terminals.
+Notice 0:     Created 48611 nets and 168880 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/floorplan/verilog2def_openroad.def
+Top-level design name: IBEX_SoC_S
+Warning: Some pins weren't matched by the config file
+Those are: ['HCLK', 'HRESETn', 'Input_irq', 'Output_DATA', 'PAD_MSI_Sys0_SS0_S1', 'PAD_MSO_Sys0_SS0_S1', 'PAD_SCLK_Sys0_SS0_S1', 'PAD_SSn_Sys0_SS0_S1', 'PAD_fcen_Sys0_S0', 'PAD_fsclk_Sys0_S0', 'PAD_i2c_cl_Sys0_SS0_S0', 'PAD_i2c_da_Sys0_SS0_S0', 'PAD_pwm_Sys0_SS0_S2', 'Input_DATA[0]', 'PAD_GPIO_Sys0_S2[0]', 'PAD_fdio_Sys0_S0[0]', 'db_reg_Sys0[0]', 'Input_DATA[1]', 'PAD_GPIO_Sys0_S2[1]', 'PAD_fdio_Sys0_S0[1]', 'db_reg_Sys0[1]', 'Input_DATA[2]', 'PAD_GPIO_Sys0_S2[2]', 'PAD_fdio_Sys0_S0[2]', 'db_reg_Sys0[2]', 'Input_DATA[3]', 'PAD_GPIO_Sys0_S2[3]', 'PAD_fdio_Sys0_S0[3]', 'db_reg_Sys0[3]', 'Input_DATA[4]', 'PAD_GPIO_Sys0_S2[4]', 'Input_DATA[5]', 'PAD_GPIO_Sys0_S2[5]', 'Input_DATA[6]', 'PAD_GPIO_Sys0_S2[6]', 'Input_DATA[7]', 'PAD_GPIO_Sys0_S2[7]', 'PAD_GPIO_Sys0_S2[8]', 'PAD_GPIO_Sys0_S2[9]', 'PAD_GPIO_Sys0_S2[10]', 'PAD_GPIO_Sys0_S2[11]', 'PAD_GPIO_Sys0_S2[12]', 'PAD_GPIO_Sys0_S2[13]', 'PAD_GPIO_Sys0_S2[14]', 'PAD_GPIO_Sys0_S2[15]']
+Assigning random sides to the above pins
+Block boundaries: 0 0 2920000 3520000
+Writing /openLANE_flow/designs/IBEX_SoC_S/runs/19-12_01-17/tmp/floorplan/ioPlacer.def
