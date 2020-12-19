@@ -140,7 +140,10 @@ As detailed in [openLANE](https://github.com/efabless/openlane)'s documentations
 
 The config file is included in **** directory
 
-we did some experimentations on the config.tcl file to find out the optimum configuration settings ...You can find different configurations trials in MS2 "Report.pdf" where we have a table with different options and the corresponding results. 
+we did some experimentations on the config.tcl file to find out the optimum configuration settings which produce lower violations and positive slack. You can find different configurations trials in MS2 "Report.pdf" where we have a table with different options and the corresponding results.
+
+![Configurations experiemnts](./image/configurations_table.png)
+
 
 ![ibex Hardening results](./image/ibex_core_gds.png)
 
