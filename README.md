@@ -142,7 +142,16 @@ The config file is included in **** directory
 
 we did some experimentations on the config.tcl file to find out the optimum configuration settings which produce lower violations and positive slack. You can find different configurations trials in MS2 "Report.pdf" where we have a table with different options and the corresponding results.
 
-![Configurations experiemnts](./image/configurations_table.png)
+![Configurations experiemnts](./image/configurations_table.PNG)
+
+Notes: 
+●	All the magic violations are false positives because they are minimum hole violations.
+●	Going below 3.5 for PL_TARGET_DENSITY configuration or setting SYNTH_STRATEGY to 1 result in segmentation violation
+●	Since, segmentation violation is not a descriptive error, so the error is hard to be figured out. Setting PL_TARGET_DENSITY to 3.5 and SYNTH_STRATEGY to 1 should be avoided 
+●	The best combination of configurations is highlighted 
+●	In the last configurations combination, the negative slack has been reduced by 0.05. However, the false positive antenna violations increased dramatically. This trial had the least utilization, produced the least slack, but generated dramatic magic violations. So, a trade-off has to be made here between targeting lowering the slack and lowering the violations.
+●	The trade-off we made targeted the least violations. We chose the best combinations that produce the least violations. We can increase the system clock to produce a positive slack. 
+●	To address the magic violations produced in the last run, we are currently trying different diode insertion strategies.
 
 
 ![ibex Hardening results](./image/ibex_core_gds.png)
