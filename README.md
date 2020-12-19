@@ -13,7 +13,7 @@
 ## Project Description:
 
 
-This is an SoC based on IBEX, a riscV based core, manifactured for *Digital Design 2 Course @ AUC*, to be submitted and manufactured by *Google Shuttle*.
+This is an SoC based on IBEX, a riscV based core, built for *Digital Design 2 Course @ AUC*, to be submitted and manufactured by *Google Shuttle*.
 
 It is designed entirely using open source EDA tools ... 
 
@@ -63,10 +63,41 @@ To perfom the conversion you would need to go to the */util* directoty inside IB
 
 Also, our SoC is supposed to communicate with other components through AHB Bus Interface. So, we designed a **wrapper** to make our system compatible with AHB standard signals.
 
-### **wrapper description**
+## **Wrapper description**
 
+The wrapper's main mission was producing AHB compatible signals from our IBEX core. We did this through instantiating the core inside our wrapper and mapped its signals to AHB signals through the following FSM:
 
-![wrapper](./image/wrapper.png)
+![fsm](./image/fsm.png)
+
+It mainly has four states: 
+* idle
+* data request
+* instruction request
+* waiting for the response
+
+here is a quick description of the main AHB signals:
+
+|Signal | Description |
+|-------| ------------|
+|HCLK   |clock singal |
+|HRESETn| reset signal|
+|HADDR  |the address to be used for the transfer|
+|HSIZE|indicates the size of a data transfer. <br> 000 => byte <br> 001 => Half word <br> 010 => word|
+|HTRANS| state of the transfare <br> 00 => idle <br> 01 => busy <br> 10 => NON SEQUENTIAL|
+|HREADY|indicates previous transfer is complete|
+|HRDATA|The slave output to the master|
+|HWRITE| enable write to slaves|
+|HWDATA| data to be written in slave|
+
+<br>
+
+you can find the full description of IBEX signals in their [documentation](https://ibex-core.readthedocs.io/en/latest/02_user/integration.html)
+
+![mapping](./image/wrapper.png)
+
+> you details of each signal could be found in the `new wrapper.v` in our src folder.
+
+>Special thanks to our professor @shalan for helping us with it.
 
 
 ---
