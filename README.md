@@ -13,7 +13,7 @@
 ## Project Description:
 
 
-This is an SoC based on IBEX, a riscV based core, manifactured for *Digital Design 2 Course @ AUC*, to be submitted and manufactured by *Google Shuttle*.
+This is an SoC based on IBEX, a riscV based core, built for *Digital Design 2 Course @ AUC*, to be submitted and manufactured by *Google Shuttle*.
 
 It is designed entirely using open source EDA tools ... 
 
