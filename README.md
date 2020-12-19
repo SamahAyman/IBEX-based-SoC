@@ -159,7 +159,8 @@ designs/IBEX_SoC
 ----
 ### **Integerating with Caraval**
 </br> 
-### **Getting started** 
+
+Getting started
 
 We started by cloning the repo and uncompressing the files.
 ```
